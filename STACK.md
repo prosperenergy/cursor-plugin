@@ -107,3 +107,5 @@ Teach Cursor agents the stack so they:
 2. Route ops to the right Grok bot seat.
 3. Own code work in Cursor when a PR is the right artifact.
 4. Point at `prosper-fleet-definitive` and private `prosper-brain` instead of inventing hierarchy.
+
+**Connect the layers:** see [`CONNECT.md`](./CONNECT.md) and `/connect-stack`.

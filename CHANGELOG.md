@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.1.0
+
+* Added: `CONNECT.md` — how Cursor, Grok, and Grok bots connect (AgentCouch + Cursor Bridge)
+* Added: Skill `prosper-connect` and command `connect-stack`
+* Updated: README / STACK links to the connect playbook
+
 ## 1.0.0
 
 * Breaking: Rebranded from Appwrite Cursor plugin to Prosper Cursor ↔ Grok ↔ Grok bots
