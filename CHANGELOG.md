@@ -1,19 +1,19 @@
 # Change Log
 
-## 0.2.0
+## 1.0.0
 
-* Breaking: Replaced local `appwrite-api` and `appwrite-docs` MCP servers with the hosted server
-* Added: Hosted Appwrite MCP server at `https://mcp.appwrite.io/`, authenticated via OAuth
-* Added: README guidance for MCP sign-in, reauthentication, and connection troubleshooting
-* Updated: CLI skill covers `includes` multi-file config, `settings`, and `webhooks`
-* Updated: CLI skill documents `--where`, `--sort-asc`, `--sort-desc`, `--select` query flags
-* Updated: CLI skill moves function and site variables to `.env` with `--with-variables`
-* Updated: CLI skill adds `buildSpecification`, `runtimeSpecification`, `deploymentRetention` fields
-* Updated: CLI skill adds `project` service, Homebrew tap install, and `login --switch`
-* Updated: SDK skills use TablesDB row and table terminology for permissions
-* Updated: LICENSE changed from MIT to the Appwrite BSD-style license
+* Breaking: Rebranded from Appwrite Cursor plugin to Prosper Cursor ↔ Grok ↔ Grok bots
+* Added: `STACK.md` — coherent three-layer architecture (Cursor workshop, Grok brain, Grok bots fleet)
+* Added: Skills `prosper-stack`, `prosper-cursor-workshop`, `prosper-grok-bots`, `prosper-fleet-routing`
+* Added: Commands `explain-stack`, `route-to-seat`
+* Added: `project.faf` for FAF grounding
+* Removed: Appwrite SDK skills, deploy-site / deploy-function commands, Appwrite MCP
+* Updated: Plugin manifest, logo, README for Prosper Energy
 
-## 0.1.0
+## 0.2.0 (upstream Appwrite)
 
-* Added: Initial release of the Appwrite plugin for Cursor
+* Hosted Appwrite MCP and SDK skills (superseded for Prosper)
 
+## 0.1.0 (upstream Appwrite)
+
+* Initial Appwrite plugin release

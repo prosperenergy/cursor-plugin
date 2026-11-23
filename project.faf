@@ -1,0 +1,42 @@
+# Prosper Cursor ↔ Grok ↔ Grok bots plugin
+# FAF project facts for Grok / Cursor agents
+
+project:
+  name: prosper-cursor-grok
+  goal: Make Prosper's Cursor + Grok + Grok bots stack coherent for agents and humans
+  repo: https://github.com/prosperenergy/cursor-plugin
+  company: Prosper Energy
+  operator: Craig Stratton
+
+stack:
+  layers:
+    - name: Cursor
+      role: workshop
+      owns: code, PRs, cloud agents, MCP on checkouts
+    - name: Grok
+      role: brain
+      owns: judgment, drafting, Imagine, FAF, bot design tooling
+    - name: Grok bots
+      role: always-on fleet
+      owns: Hanna, Sam, Burtha, Kayla, Maddi, Oma seats; Dr Eggbot design
+
+fleet:
+  law: https://github.com/prosperenergy/prosper-fleet-definitive/blob/main/11-sam-definitive-handbook/FLEET-LAW.md
+  public_pack: https://github.com/prosperenergy/prosper-fleet-definitive
+  private_canonical: prosperenergy/prosper-brain
+  hierarchy: Craig → Hanna → specialists; Dr Eggbot outside council to Craig
+
+human_context:
+  who: Craig Stratton (Prosper)
+  why_three_layers: Not redundant — workshop ships code, Grok thinks/designs, bots run company seats
+  brand_notes: Cream #F9F4ED, happy blue #0B5CFF; Maddi owns brand lane
+
+commands:
+  explain: /explain-stack
+  route: /route-to-seat
+
+constraints:
+  - Craig decides; newest word wins
+  - No impersonating fleet seats from Cursor
+  - Approve-gated customer sends; Cover Me OFF
+  - No secrets in chat, commits, Redis, or logs
