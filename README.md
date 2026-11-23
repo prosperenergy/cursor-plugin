@@ -57,4 +57,4 @@ This repository was forked from the Appwrite Cursor plugin as a starting point f
 
 ## License
 
-MIT — Prosper Energy. Upstream Appwrite plugin used BSD-3-Clause; see git history for prior LICENSE text.
+Prosper’s new material is MIT. Upstream Appwrite Cursor plugin packaging remains under BSD-3-Clause. Both notices are in [`LICENSE`](./LICENSE).

@@ -1,14 +1,30 @@
 # Prosper Cursor ↔ Grok ↔ Grok bots plugin
 # FAF project facts for Grok / Cursor agents
 
+faf_version: "3.0"
+
 project:
   name: prosper-cursor-grok
   goal: Make Prosper's Cursor + Grok + Grok bots stack coherent for agents and humans
   repo: https://github.com/prosperenergy/cursor-plugin
   company: Prosper Energy
   operator: Craig Stratton
+  main_language: Markdown
+  type: library
 
 stack:
+  frontend: slotignored
+  css_framework: slotignored
+  ui_library: slotignored
+  state_management: slotignored
+  backend: slotignored
+  api_type: slotignored
+  runtime: slotignored
+  database: slotignored
+  connection: slotignored
+  hosting: GitHub
+  build: slotignored
+  cicd: GitHub Actions
   layers:
     - name: Cursor
       role: workshop
@@ -29,7 +45,7 @@ fleet:
 human_context:
   who: Craig Stratton (Prosper)
   why_three_layers: Not redundant — workshop ships code, Grok thinks/designs, bots run company seats
-  brand_notes: Cream #F9F4ED, happy blue #0B5CFF; Maddi owns brand lane
+  brand_notes: "Cream #F9F4ED, happy blue #0B5CFF; Maddi owns brand lane"
 
 commands:
   explain: /explain-stack
