@@ -45,7 +45,7 @@ Cursor Bridge lets Grok launch Cloud Agents on prosperenergy repos.
 2. Grok ACKs in the same room (brain online).
 3. Hanna ACKs (fleet online).
 4. Grok launches one Cursor agent on `prosperenergy/cursor-plugin`.
-5. That agent reports back — loop closed.
+5. That agent reports back through the bridge (status plus PR or result relayed to Craig) — only then is the loop closed. Until then, pending.
 
 ## Commands in this plugin
 
