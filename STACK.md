@@ -99,6 +99,22 @@ Hand-off pattern:
 
 ---
 
+## PR review default (Prosper repos)
+
+**Default automatic reviewer: GitHub Copilot** (`copilot-pull-request-reviewer`), not Codex Cloud / `chatgpt-codex-connector`.
+
+Why: Codex auto-review burns usage limits on small PRs (seen on `cursor-plugin` #3). Copilot already reviewed that PR and recommended approval — keep Copilot as the default lane.
+
+### Operators (dashboard — agents cannot flip these)
+
+1. **Turn Codex auto-review off** — Codex Cloud → Code review settings → for `prosperenergy/cursor-plugin` (and other Prosper repos) set Automatic code review **off** / follow personal prefs with auto review disabled. Also disable Automatic review under Personal preferences if you open PRs yourself.
+2. **Turn Copilot auto-review on** — GitHub → profile → Copilot settings → Code review → enable Automatic Copilot code review (optionally Review new pushes / draft PRs).
+3. **Repo-wide Copilot** — Repo → Settings → Rules → Rulesets → Active ruleset on default (or all) branches → enable **Automatically request Copilot code review**.
+
+Agents recording stack law should treat Copilot as the expected PR reviewer and should not assume Codex Cloud review is enabled.
+
+---
+
 ## This plugin’s job
 
 Teach Cursor agents the stack so they:
