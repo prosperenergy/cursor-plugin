@@ -1,11 +1,11 @@
 {
-    "name": "appwrite-plugin",
-    "version": "0.2.0",
-    "description": "The Appwrite plugin for Cursor includes skills and the hosted Appwrite MCP server, allowing AI agents to access your projects and correctly integrate with your projects.",
-    "author": {
-        "name": "Appwrite",
-        "email": "team@appwrite.io"
-    },
-    "repository": "https://github.com/appwrite/cursor-plugin",
-    "logo": "logo.svg"
+  "name": "prosper-cursor-grok",
+  "version": "1.0.0",
+  "description": "Prosper's Cursor plugin for the three-layer stack: Cursor (workshop), Grok (brain), and Grok bots (always-on fleet). Skills route work to the right layer and seat.",
+  "author": {
+    "name": "Prosper Energy",
+    "email": "admin@prosper.energy"
+  },
+  "repository": "https://github.com/prosperenergy/cursor-plugin",
+  "logo": "logo.svg"
 }

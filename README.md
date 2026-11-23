@@ -1,91 +1,60 @@
-# Appwrite Cursor Plugin
+# Prosper Cursor ↔ Grok ↔ Grok bots
 
-![License](https://img.shields.io/github/license/appwrite/cursor-plugin.svg?style=flat-square)
-![Version](https://img.shields.io/badge/api%20version-1.9.x-blue.svg?style=flat-square)
-[![Twitter Account](https://img.shields.io/twitter/follow/appwrite?color=00acee&label=twitter&style=flat-square)](https://twitter.com/appwrite)
-[![Discord](https://img.shields.io/discord/564160730845151244?label=discord&style=flat-square)](https://appwrite.io/discord)
+**This is Prosper Energy’s Cursor plugin.** It exists so it is obvious why Craig runs **Cursor**, **Grok**, and the **Grok bots** together — three layers, one stack, no redundancy.
 
-**This SDK is compatible with Appwrite server version 1.9.x. For older versions, please check [previous releases](https://github.com/appwrite/cursor-plugin.git/releases).**
+| Layer | Job | One-liner |
+|-------|-----|-----------|
+| **Cursor** | Workshop | Where Prosper **ships code** (agents, PRs, MCP). |
+| **Grok** | Brain / platform | Where Prosper **thinks, drafts, Imagines, and designs bots**. |
+| **Grok bots** | Always-on fleet | Where Prosper **runs company seats** (Hanna → specialists). |
 
-Appwrite is an open-source backend as a service server that abstracts and simplifies complex and repetitive development tasks behind a very simple to use REST API. Appwrite aims to help you develop your apps faster and in a more secure way. Use the CursorPlugin SDK to integrate your app with the Appwrite server to easily start interacting with all of Appwrite backend APIs and tools. For full API documentation and tutorials go to [https://appwrite.io/docs](https://appwrite.io/docs)
+Full narrative: [`STACK.md`](./STACK.md)  
+Fleet law (public): [prosper-fleet-definitive](https://github.com/prosperenergy/prosper-fleet-definitive)
 
-## Installation
+---
 
-Install this plugin in Cursor by adding the plugin directory to your project or Cursor plugins folder.
+## Install
+
+Add this repo as a Cursor plugin (project or Cursor plugins folder). Skills and commands load for agents working in Prosper contexts.
 
 ## Structure
 
 ```
 .cursor-plugin/
-└── plugin.json              # Plugin manifest
-skills/                      # Agent skills (per language)
-├── appwrite-typescript/
-│   └── SKILL.md
-├── appwrite-dart/
-│   └── SKILL.md
-├── appwrite-kotlin/
-│   └── SKILL.md
-├── appwrite-swift/
-│   └── SKILL.md
-├── appwrite-php/
-│   └── SKILL.md
-├── appwrite-python/
-│   └── SKILL.md
-├── appwrite-ruby/
-│   └── SKILL.md
-├── appwrite-go/
-│   └── SKILL.md
-├── appwrite-rust/
-│   └── SKILL.md
-├── appwrite-dotnet/
-│   └── SKILL.md
-commands/                    # Agent-executable commands
-├── deploy-site.md
-└── deploy-function.md
-.mcp.json                    # Hosted Appwrite MCP server
+└── plugin.json           # Prosper plugin manifest
+STACK.md                  # Why the three layers exist
+project.faf               # FAF facts for Grok/Cursor grounding
+skills/
+├── prosper-stack/        # Layer picker
+├── prosper-cursor-workshop/
+├── prosper-grok-bots/
+└── prosper-fleet-routing/
+commands/
+├── explain-stack.md
+└── route-to-seat.md
+.mcp.json                 # Optional FAF MCP hint
 ```
 
 ## Skills
 
-This plugin includes Appwrite SDK skills for the following languages:
-
-- **Typescript** — `skills/appwrite-typescript/SKILL.md`
-- **Dart** — `skills/appwrite-dart/SKILL.md`
-- **Kotlin** — `skills/appwrite-kotlin/SKILL.md`
-- **Swift** — `skills/appwrite-swift/SKILL.md`
-- **Php** — `skills/appwrite-php/SKILL.md`
-- **Python** — `skills/appwrite-python/SKILL.md`
-- **Ruby** — `skills/appwrite-ruby/SKILL.md`
-- **Go** — `skills/appwrite-go/SKILL.md`
-- **Rust** — `skills/appwrite-rust/SKILL.md`
-- **Dotnet** — `skills/appwrite-dotnet/SKILL.md`
-
-Each skill provides comprehensive SDK usage examples including authentication, database operations, file storage, real-time subscriptions, and more.
-
-## Hosted MCP Server
-
-This plugin configures the hosted Appwrite MCP server at `https://mcp.appwrite.io/`. It gives Cursor access to your Appwrite workspace and projects as well as the latest Appwrite documentation.
-
-Cursor starts a browser-based OAuth flow when the server first connects. Sign in to Appwrite and approve access; no API key, project ID, endpoint, or other secret needs to be added to `.mcp.json`.
-
-After authentication, try:
-
-> Use Appwrite to show my workspace context and list my projects.
-
-If the server does not connect, open Cursor's MCP settings, restart the `appwrite` server, and complete the sign-in prompt. Clear or reauthenticate the server from the same settings when the OAuth session expires, and inspect Cursor's MCP output logs for connection errors.
+- **prosper-stack** — When to use Cursor vs Grok vs Grok bots
+- **prosper-cursor-workshop** — Boundaries of the code workshop
+- **prosper-grok-bots** — What the hosted seats are (and are not)
+- **prosper-fleet-routing** — Hanna / Sam / Burtha / Kayla / Maddi / Oma / Dr Eggbot
 
 ## Commands
 
-Agent-executable commands for deploying directly from your editor:
+- **explain-stack** — Short coherent explanation of the three layers
+- **route-to-seat** — Classify an ask and name the next owner
 
-- **deploy-site** — Deploy an Appwrite site using the CLI. Covers init, push, CI/CD non-interactive mode, site management, variables, and logs.
-- **deploy-function** — Deploy an Appwrite function using the CLI. Covers init, push, CI/CD non-interactive mode, function management, executions, variables, and local development.
+## Authority (condensed)
 
+Craig Stratton decides. Hanna coordinates. Specialists keep their lanes. Dr Eggbot designs bots outside council. Money, credentials, customer messages, public posts, DNS, and production need current Craig authorization.
 
-## Contribution
+## History
 
-This library is auto-generated by Appwrite custom [SDK Generator](https://github.com/appwrite/sdk-generator). To learn more about how you can help us improve this SDK, please check the [contribution guide](https://github.com/appwrite/sdk-generator/blob/master/CONTRIBUTING.md) before sending a pull-request.
+This repository was forked from the Appwrite Cursor plugin as a starting point for Prosper’s plugin packaging. Content was rewritten for Prosper’s Cursor + Grok + Grok bots stack; Appwrite SDK skills were removed.
 
 ## License
 
-Please see the [BSD-3-Clause license](https://raw.githubusercontent.com/appwrite/appwrite/master/LICENSE) file for more information.
+Prosper’s new material is MIT. Upstream Appwrite Cursor plugin packaging remains under BSD-3-Clause. Both notices are in [`LICENSE`](./LICENSE).
