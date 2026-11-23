@@ -9,6 +9,7 @@
 | **Grok bots** | Always-on fleet | Where Prosper **runs company seats** (Hanna → specialists). |
 
 Full narrative: [`STACK.md`](./STACK.md)  
+How they connect: [`CONNECT.md`](./CONNECT.md)  
 Fleet law (public): [prosper-fleet-definitive](https://github.com/prosperenergy/prosper-fleet-definitive)
 
 ---
@@ -23,21 +24,25 @@ Add this repo as a Cursor plugin (project or Cursor plugins folder). Skills and 
 .cursor-plugin/
 └── plugin.json           # Prosper plugin manifest
 STACK.md                  # Why the three layers exist
+CONNECT.md                # How Cursor / Grok / Grok bots talk
 project.faf               # FAF facts for Grok/Cursor grounding
 skills/
 ├── prosper-stack/        # Layer picker
+├── prosper-connect/      # Bridge + prove-connected loop
 ├── prosper-cursor-workshop/
 ├── prosper-grok-bots/
 └── prosper-fleet-routing/
 commands/
 ├── explain-stack.md
-└── route-to-seat.md
+├── route-to-seat.md
+└── connect-stack.md
 .mcp.json                 # Optional FAF MCP hint
 ```
 
 ## Skills
 
 - **prosper-stack** — When to use Cursor vs Grok vs Grok bots
+- **prosper-connect** — AgentCouch + Cursor Bridge connect loop
 - **prosper-cursor-workshop** — Boundaries of the code workshop
 - **prosper-grok-bots** — What the hosted seats are (and are not)
 - **prosper-fleet-routing** — Hanna / Sam / Burtha / Kayla / Maddi / Oma / Dr Eggbot
@@ -46,6 +51,7 @@ commands/
 
 - **explain-stack** — Short coherent explanation of the three layers
 - **route-to-seat** — Classify an ask and name the next owner
+- **connect-stack** — Post in PROSPER-bridge and prove the loop
 
 ## Authority (condensed)
 
