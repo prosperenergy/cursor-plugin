@@ -15,7 +15,7 @@ Read `CONNECT.md` first.
 2. Mention **Grok** and **hanna** (plus other seats if needed).
 3. Watch for one-line GREEN ACKs.
 4. Ask Grok to launch one Cursor Cloud Agent on `prosperenergy/cursor-plugin`.
-5. When that agent is live, report the loop closed.
+5. Declare the loop closed only after the newly launched agent's response or report comes back through the bridge (status plus PR or result relayed to Craig). Until then, report it as pending.
 
 ## Do not
 
